@@ -1,0 +1,48 @@
+.portfolio__projects {
+  display: flex;
+  margin-bottom: 4rem;
+
+  &__card {
+    margin: 10px 0;
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.2s;
+    text-decoration: none;
+
+    &:hover &__imageContainer img {
+      filter: grayscale(0%);
+    }
+
+    &__imageContainer {
+      position: relative;
+      height: 12rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: filter 0.5s;
+        filter: grayscale(100%);
+      }
+
+      //&:hover img {
+      //  filter: grayscale(0%);
+      //}
+    }
+
+    &__info {
+      padding: 1rem;
+
+      h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: white;
+      }
+
+      span {
+        color: #9ca3af;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
