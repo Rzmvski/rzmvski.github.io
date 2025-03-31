@@ -1,0 +1,52 @@
+.techstack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__name {
+      margin-top: 0.5rem;
+      font-size: 0.825rem;
+    }
+
+    &__status {
+      font-weight: bold;
+    }
+
+    &__learning {
+      border-color: #3b82f6;
+    }
+
+    .learningBadge {
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+      color: #60a5fa;
+      font-size: 0.75rem;
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
